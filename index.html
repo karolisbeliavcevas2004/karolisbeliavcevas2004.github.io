@@ -1,61 +1,249 @@
+<!DOCTYPE html>
+<html lang="en">
 
-<html lang="lt"><head>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <link rel="stylesheet" href="design.css">
     
-  <title>Portfolio</title> 
   
+    <script type="text/javascript" id="MathJax-script" async
+        src="https://cdn.jsdelivr.net/npm/mathjax@3/es5/tex-mml-chtml.js">
+    </script>
 </head>
+
 <body>
-<h1>Home</h1>
-<label1>Karolis Beliavcevas</label1><br>
-<label2>I'm Student|</label2>
 
-<h2>About</h2>
+    
+    <div class="menu">
+        <div class="logo">
+            <img src="photo/solar-panel-logo-vector-icon-natural-energy-design_598213-377.png" alt="Logo" class="logo-img">
+        </div>
+        
+        
+        <div id="clock"></div>
 
- <a>I am currently studying Electrical Energy Engineering at Vilnius Tech University, where I am learning about various aspects of power systems, renewable energy technologies, and the principles of electrical engineering.</a><br>
- <img src="photo/download.jfif"><br>
+        <ul>
+            <li><a href="#home">Home</a></li>
+            <li><a href="#about">About</a></li>
+            <li><a href="#resume">Resume</a></li>
+            <li><a href="#portfolio">Portfolio</a></li>
+        </ul>
+    </div>
+
+   
+    <div class="main-content">
+        <section id="home">
+            <h1 class="heading">Home</h1>
+            <p class="label">Karolis Beliavcevas</p>
+            <p class="label">I'm a Student</p>
+       
+        </section>
+       
+        <section id="contact" class="main-content">
+            <h1 class="heading">Kontaktų Forma</h1>
+            <form id="contactForm">
+                <label class="label" for="firstName">Vardas:</label>
+                <input type="text" id="firstName" name="firstName" required>
+    
+                <label class="label" for="lastName">Pavardė:</label>
+                <input type="text" id="lastName" name="lastName" required>
+    
+                <label class="label" for="email">El. Pašto Adresas:</label>
+                <input type="email" id="email" name="email" required>
+    
+                <label class="label" for="phone">Telefono Numeris:</label>
+                <input type="tel" id="phone" name="phone" required>
+    
+                <label class="label" for="address">Adresas:</label>
+                <input type="text" id="address" name="address" required>
+    
+                <p class="label">Įvertinkite šiuos klausimus nuo 1 iki 10:</p>
+                <label for="question1">1. Kaip patiko svetainės dizainas?</label>
+                <input type="number" id="question1" name="question1" min="1" max="10" required>
+    
+                <label for="question2">2. Ar buvo lengva naudotis svetaine?</label>
+                <input type="number" id="question2" name="question2" min="1" max="10" required>
+    
+                <label for="question3">3. Ar radote norimą informaciją?</label>
+                <input type="number" id="question3" name="question3" min="1" max="10" required>
+    
+                <label for="question4">4. Kaip vertinate svetainės greitį?</label>
+                <input type="number" id="question4" name="question4" min="1" max="10" required>
+    
+                <label for="question5">5. Ar rekomenduotumėte šią svetainę?</label>
+                <input type="number" id="question5" name="question5" min="1" max="10" required>
+    
+                <button type="button" id="submitButton">Pateikti</button>
+            </form>
+    
+            <div id="output">
+                <!-- Duomenys bus atvaizduoti čia -->
+            </div>
+          
+<div id="error-message" style="display: none; color: red;"></div>
+
+
+<div id="success-message" style="display: none; color: green;"></div>
+
+
+<div id="output"></div>
+        </section>
+    
+
+
+
+
+        <section id="about">
+            <h2 class="heading">About</h2>
+            <p class="label">I am currently studying Electrical Energy Engineering at Vilnius Tech University, where I am learning about various aspects of power systems, renewable energy technologies, and the principles of electrical engineering.</p>
+            <img src="photo/download.jfif" alt="Karolio nuotrauka">
+            <p class="info">Birthday: 1 May 2004</p>
+            <p class="info">Website: <a href="https://www.example.com" target="_blank" class="website-link">www.example.com</a></p>
+            <p class="info">Phone: +123 456 7890</p>
+            <p class="info">City: Vilnius, LTU</p>
+            <p class="info">Degree: Master</p>
+            <p class="info">Age: 30</p>
+            <p class="info">Email: email@example.com</p>
+            <p class="info">Freelance: Available</p>
+        </section>
+
+        <section id="resume">
+            <h3 class="heading">Resume</h3>
+            <p class="label">Every great achievement starts with the courage to take the first step. Believe in yourself, because even the smallest actions can lead to incredible transformations.</p>
+            <h4 class="heading">Summary</h4>
+            <p class="label">KAROLIS BELIAVCEVAS</p>
+            <p class="info">Motivated electrical engineering student with hands-on experience in designing, analyzing, and troubleshooting power systems and renewable energy projects. Skilled in applying technical knowledge to practical solutions, from initial concept to final implementation, with a focus on sustainability and efficiency.</p>
+            <p class="info">Phone: (123) 456-7891</p>
+            <p class="info">Email: 123@example.com</p>
+
+            <h4 class="label">Education</h4>
+            <p class="info">STUDENT OF ELECTRICAL ENGINEERING</p>
+            <p class="info">2023-</p>
+            <p class="info">Vilnius Tech University</p>
+
+            <h4 class="label">Experience</h4>
+            <p class="info">STUDENT OF ELECTRICAL ENGINEERING</p>
+            <ul>
+                <li>Delegate tasks to a team of 7 engineers, providing guidance on design, testing, and troubleshooting processes to ensure project success.</li>
+                <li>Supervise the evaluation and optimization of electrical designs to ensure safety, efficiency, and compliance with industry standards.</li>
+                <li>Oversee the effective allocation and management of project budgets ranging from $20,000 to $500,000, ensuring on-time and cost-effective delivery.</li>
+                <li>Managed up to 5 projects or tasks at a given time while under pressure.</li>
+            </ul>
+        </section>
+
+        <!-- Sekcija su matematine formule -->
+        <section id="math-section">
+            <!-- MathML lygtis su funkcija f(z) -->
+            <math xmlns="http://www.w3.org/1998/Math/MathML" display="block">
+                <!-- Funkcijos simbolis -->
+                <mi>f</mi>
+                <!-- Pradedame skliaustus -->
+                <mo stretchy="false">(</mo>
+                <!-- Parametras 'a' -->
+                <mi>a</mi>
+                <!-- Uždarome skliaustus -->
+                <mo stretchy="false">)</mo>
+                <!-- Lygybės ženklas -->
+                <mo>=</mo>
+                <!-- Trupmena -->
+                <mfrac>
+                    <!-- Trupmenos skaitiklis -->
+                    <mn>1</mn>
+                    <!-- Trupmenos vardiklis -->
+                    <mrow>
+                        <mn>2</mn>
+                        <!-- Pi simbolis -->
+                        <mi>&#x3C0;</mi>
+                        <!-- Kompleksinis vienetas 'i' -->
+                        <mi>i</mi>
+                    </mrow>
+                </mfrac>
+                <!-- Integralo simbolis -->
+                <mo>&#x222E;</mo>
+                
+    <mfrac>
+      
+        <mrow>
+            <mi>f</mi>
+            <mo stretchy="false">(</mo>
+            <mi>z</mi>
+            <mo stretchy="false">)</mo>
+        </mrow>
+       
+        <mrow>
+            <mi>z</mi>
+            <mo>&#x2212;</mo>
+            <mi>a</mi>
+        </mrow>
+    </mfrac>
+             
+                <mi>d</mi>
+                <mi>z</mi>
+            </math>
+        </section>
+
+       <section id="portfolio">
+    <h4 class="heading">Portfolio</h4>
+    <p class="info">Videos and photos from work</p>
+
+   
+    <div class="media-container">
+        <div class="media-item">
+            <img src="photo/istockphoto-1456865129-612x612.jpg" alt="Darbo nuotrauka" width="600" height="400">
+        </div>
+        <div class="media-item">
+            <video controls width="600" height="400">
+                <source src="Video/RequiredToolsandSuppliesForBasicSoldering.mp4">
+            </video>
+        </div>
+        <div class="media-item">
+            <iframe src="https://www.youtube.com/embed/Fq4TbbUtIiU" style="border: none;" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen width="600" height="400"></iframe>
+        </div>
+    </div>
+
  
- <p0>Birthday: 1 May 2004</p0><br>
- <p1>Website: www.example.com</p1><br>
- <p2>Phone: +123 456 7890</p2><br>
- <p3>City: Vilnius, LTU</p3><br>
- <p5>Degree: Master</p5><br>
- <p6>Age: 30</p6><br>
- <p7>Email: email@example.com</p7><br>
- <p8>Freelance: Available</p8><br>
+    <audio controls>
+        <source src="Audio/engine-47745.mp3">
+    </audio>
+</section>
+        
+      
+        <button id="toggle-theme">Šviesus/Tamsus režimas</button>
+    </div>
 
-<h3>Resume</h3><br>
-  <r0>Every great achievement starts with the courage to take the first step. Believe in yourself, because even the smallest actions can lead to incredible transformations.</r0><br>
- <label1>Sumary</label1><br>
-  <r0>KAROLIS BELIAVCEVAS</r0><br>
-  <r1>Motivated electrical engineering student with hands-on experience in designing, analyzing, and troubleshooting power systems and renewable energy projects. Skilled in applying technical knowledge to practical solutions, from initial concept to final implementation, with a focus on sustainability and efficiency.</r1><br>
-   <r2>(123) 456-7891</r2><br>
-   <r3>123@example.com</r3><br>
+    
+    <footer>
+        <div class="footer-content">
+           
+            <div class="footer-left">
+                <img src="photo/chef-man-cap-svgrepo-com.svg" alt="SVG Logo" class="footer-svg">
+            </div>
+    
+            <div class="contact-info">
+                <p>Contacts:</p>
+                <p>Email: email@example.com</p>
+                <p>Phone: +123 456 7890</p>
+            </div>
+    
+            <div class="social-links">
+                <a href="https://www.facebook.com" target="_blank" class="social-icon"><img src="photo/facebook-512.png" alt="Facebook"></a>
+                <a href="https://www.twitter.com" target="_blank" class="social-icon"><img src="photo/124021.png" alt="Twitter"></a>
+                <a href="https://www.linkedin.com" target="_blank" class="social-icon"><img src="photo/174857.png" alt="LinkedIn"></a>
+            </div>
+            
+            <div class="footer-creator">
+                <p>&copy; 2024 Karolis Beliavcevas.</p>
+            </div>
+        </div>
+    </footer>
 
-<label2>Education</label2><br>
-  <r4>STUDENT OF ELECTRICAL ENGENEERING</r4><br>
-  <r5>2023-</r5><br>
-  <Vilnius Tech university>
- <label3>EXPERIENCE</label3><br>
-  <r6>STUDENT OF ELECTRICAL ENGENEERING</r6><br>
-  <r7>Delegate tasks to a team of 7 engineers, providing guidance on design, testing, and troubleshooting processes to ensure project success.</r7><br>
-  <r8>Supervise the evaluation and optimization of electrical designs to ensure safety, efficiency, and compliance with industry standards.</r8><br>
-  <r9>Oversee the effective allocation and management of project budgets ranging from $20,000 to $500,000, ensuring on-time and cost-effective delivery.</r9><br>
-  <r10>Managed up to 5 projects or tasks at a given time while under pressure.</r10><br>
+  
+    <button id="scrollToTopBtn" title="Go to top">↑</button>
 
+   
+    <script src="functions.js"></script>
 
-
-
-
-<h4>Portfolio</h3><br>
-  <s0>Videos and photoes from work</s0><br>
- 
- <video controls>
-  <source src="video/Required Tools and Supplies For Basic Soldering .mp4">
- </video><br>
-
- <iframe src="https://youtu.be/Fq4TbbUtIiU?si=hZCwkMdesZwvBWYY" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe><br>
-
- <audio controls>
-  <source src="audio/engine-47745.mp3"><br>
- </audio>
-</body></html>
+</body>
+</html>
